@@ -1,0 +1,32 @@
+formula:
+  file_name: formula.csv
+  rename_columns: { }
+nappies:
+  file_name: diaper.csv
+  rename_columns: { }
+nursed:
+  file_name: nursing.csv
+  rename_columns: {
+    "Left duration (min)": "left_duration",
+    "Right duration (min)": "right_duration",
+    "Total Duration (min)": "total_duration",
+  }
+pump:
+  file_name: pump.csv
+  rename_columns: {
+    "Left amount (ml)": "left_amount_ml",
+    "Right amount (ml)": "right_amount_ml",
+    "Total amount (ml)}": "total_amount_ml",
+  }
+  extra_drop: [
+      "Left duration (min)",
+      "Right duration (min)",
+      "Total Duration (min)"
+  ]
+  dont_drop: [ "Baby" ]
+pumped:
+  file_name: pumped.csv
+  rename_columns: { "Amount (ml)": "amount_ml" }
+sleep:
+  file_name: sleep.csv
+  rename_columns: { "Duration(minutes)": "duration" }
