@@ -28,5 +28,5 @@ pumped:
   file_name: pumped.csv
   rename_columns: { "Amount (ml)": "amount_ml" }
 sleep:
-  file_name: sleep.csv
+  file_name: corrected_sleep.csv
   rename_columns: { "Duration(minutes)": "duration" }
